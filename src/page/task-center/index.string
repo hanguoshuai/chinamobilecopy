@@ -1,0 +1,52 @@
+
+{{#list}}
+	<div class="click-change ">
+	<div class="task-title1">{{name}}</div>
+	<div class="virt gray-qian">
+				虚拟机规格足迹{{name}}
+			</div>
+			<ul class="virt-box ">
+				<div class="v-header gray-qian">
+					<span class="v-time fl">轮次{{name}}</span>
+					<span class="v-1 fl">第一轮</span>
+					<span class="v-1 fl">第二轮</span>
+					<span class="v-1 fl">第三轮</span>
+					<span class="v-1 fl">第四轮</span>
+					<span class="v-1 fl">第五轮</span>
+					<span class="v-1 fl">第六轮</span>
+				</div>
+				<li class="h-content">
+					<span class="v-time fl gray-qian">CPU</span>
+					<span class="v-1 fl">32</span>
+					<span class="v-1 fl">16</span>
+					<span class="v-1 fl">10</span>
+					<span class="v-1 fl">8</span>
+					<span class="v-1 fl qian-lu">6</span>
+					<span class="v-2 fl">4</span>
+				</li>
+				<li class="h-content">
+					<span class="v-time fl gray-qian">内存</span>
+					<span class="v-1 fl">32</span>
+					<span class="v-1 fl">16</span>
+					<span class="v-1 fl">10</span>
+					<span class="v-1 fl">8</span>
+					<span class="v-1 fl qian-lu">6</span>
+					<span class="v-2 fl">4</span>
+				</li>
+			</ul>
+			<div class="resource gray-qian">
+				资源利用率曲线图
+			</div>
+			<div class="echarts" id={{name}} style="height: 500px;width:500px;">
+				
+			</div>
+			<div class="task-info">
+				<p class="t-header">结果说明{{name}}</p>
+				<div class="task-content">
+					对业务系统进行了N轮压力测试，第N轮可满足CPU和内存的峰值采样、峰值利用率、平均利用率等上限要求，为增加系统弹性能力，我们推荐使用第N-1轮推荐配置
+				</div>
+			</div>
+			
+</div>
+
+{{/list}}

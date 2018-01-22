@@ -1,0 +1,26 @@
+.nav{
+    background: #fff;
+    margin: 10px 0;
+}
+
+.logo-content{
+	float: left;
+}
+.user-info{
+	margin-top: 18px;
+	float: right;
+}
+.user-info .user{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.user-info .user.login{
+	display: none;
+}
+
+.logo-img{
+	float: left;
+	width: 40px;
+	height: 35px;
+	padding-right: 6px;
+}

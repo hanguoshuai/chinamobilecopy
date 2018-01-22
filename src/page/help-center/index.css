@@ -1,0 +1,140 @@
+.virt{
+	height: 30px;
+	line-height: 30px;
+	margin: 10px 0;
+}
+.v-header{
+	display: flex;
+	height: 32px;
+	overflow: hidden;
+	border: 1px solid #bfbfbf;
+	background: #D8D8D8;
+}
+.v-header span{
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-right:1px solid #D8D8D8 ;
+}
+.v-time{
+	width: 223px;
+	border-right: 1px solid #fefefe;
+	background: #D8D8D8;
+}
+.v-1{
+	flex: 1;
+	/*background: red;*/
+}
+.h-content .v-time{
+	width: 224px;
+	border-right: 1px solid #fefefe;
+}
+.h-content{
+	display: flex;
+	text-align: center;
+	overflow: hidden;
+	height: 30px;
+	border: 1px solid #BFBFBF;
+	border-width: 0px 0px 1px 1px ;
+	line-height: 30px;
+}
+.h-content span{
+	
+	border-right:1px solid #ddd ;
+}
+.z-header{
+	margin-top: 15px;
+	overflow: hidden;
+	height: 30px;
+	background: #42645f;
+	line-height: 30px;
+	color: #fff;
+	
+}
+.z-header-number{
+	width: 40px;
+	background: #000;
+	text-align: center;
+}
+.z-header-content{
+	text-align: left;
+	padding-left: 20px;
+}
+.res{
+	/*border: 1px solid #CCCCCC;*/
+}
+.res-header{
+	display: flex;
+	background: #d8d8d8;
+	height: 32px;
+	overflow: hidden;
+	border: 1px solid #bfbfbf;
+}
+.res-time{
+	width: 223px;
+	border-right: 1px solid #ddd;
+}
+.res-1{
+	flex: 1;
+	width: 141px;
+	background: #d8d8d8;
+}
+.res-header span{
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-right:1px solid #D8D8D8;
+}
+.res-content{
+	height: 60px;
+	overflow: hidden;
+	border-bottom: 1px solid #bfbfbf;
+}
+.res-c-header{
+	background: #d8d8d8;
+	height: 60px;
+	width: 134px;
+	line-height: 60px;
+	text-align: center;
+	border-right: 1px solid #bfbfbf;
+}
+.res-c-title{
+	width: 90px;
+	height: 60px;
+	background: #F2F2F2;
+	border-right: 1px solid #bfbfbf;
+}
+.cpu-avg{
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border-bottom: 1px solid #bfbfbf;
+}
+.cpu-max{
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	/*border-bottom: 1px solid #bfbfbf;*/
+	
+}
+.res-c-content{
+	width: 854px;
+	background: #fff;
+	height: 60px;
+}
+.cpu-avg-content{
+	display: flex;
+	overflow: hidden;
+}
+.cpu-avg-content span{
+	flex: 1;
+	
+	width: 141px;
+	height:30px ;
+	/*background: #fff;*/
+	text-align: center;
+	line-height: 30px;
+	border-right: 1px solid #bfbfbf;
+	border-bottom: 1px solid #bfbfbf;
+}
+

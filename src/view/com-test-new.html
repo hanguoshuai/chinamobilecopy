@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<%= require('html-loader!./layout/header-common.html')%>
+		<title>
+			<%= htmlWebpackPlugin.options.title %>
+		</title>
+	</head>
+
+	<body>
+		<%= require('html-loader!./layout/nav.html')%>
+		<%= require('html-loader!./layout/nav-list.html')%>
+		<div class="w">
+			<div class="title">复杂业务应用测试</div>
+			<!--基本信息-->
+			<div class="content">
+				<div class="content-header gray">
+					<span class="content-title">基本信息</span>
+					<div class="css-click js-click">
+					</div>
+				</div>
+				<div class="content-content">
+					<!--基本信息-->
+					<div class="box">
+						<label class='task_name' >任务名称<i style="color: red;">*</i></i>
+						</label>
+						<input class="shuru" id='task_name' type="text" placeholder="请输入4-30位字母、数字、文字、_ 或 - " />
+						<span class="error_msg">任务名称将出现在任务列表</span>
+					</div>
+					<div class="box">
+						<label class='task_name'>云平台名称<i style="color: red;">*</i></i></label>
+						<select id='cloud_id' class="shuru1">
+							<option class="option-style" value="46">研究院研发云平台</option>
+							<option class="option-style" value="79">研究院研发云</option>
+							<option class="option-style" value="126">国际信息港</option>
+							<option class="option-style" value="139">移动研究院云平台</option>
+							<option class="option-style" value="142">国际信息港云</option>
+							<option class="option-style" value="162">国际信息港二期复刻</option>
+						</select>
+						<span class="error_msg">云平台名称将出现在任务列表</span>
+					</div>
+					<div class="box">
+						<label class='task_name'>任务描述</label>
+						<input class="shuru" type="text" placeholder="请输入20字以内的任务描述 " />
+						<span class="error_msg"></span>
+					</div>
+				</div>
+				<!--系统性能基本需求-->
+				<div class="content-header gray">
+					<span class="content-title">系统性能基本要求</span>
+					<div class="css-click js-click">
+					</div>
+				</div>
+				<div class="content-content">
+					<div class="box">
+						<label class='task_name'>响应时间<i style="color: red;">*</i></i>
+						</label>
+						<input class="shuru" id='response_time' type="text" placeholder="请输入响应时间，单位为毫秒，只能填数字" />
+						<span class="error_msg">response_time, 一般填写1000（毫秒）</span>
+					</div>
+					<div class="box">
+						<label class='task_name'>并发量<i style="color: red;">*</i></i>
+						</label>
+						<input class="shuru" id="concurrence" type="text" placeholder="请输入并发量 ,只能填数字" />
+						<span class="error_msg"></span>
+					</div>
+
+				</div>
+				<!--//系统性能高级设置-->
+				<div class="content-header gray">
+					<span class="content-title">系统性能高级设置</span>
+					<div class="css-click js-click rotate">
+					</div>
+				</div>
+				<div class="content-content" style="display: none;">
+					<div class="box">
+						<label class='task_name'>达标响应时间比率<i style="color: red;">*</i></i>
+						</label>
+						<select class="shuru1" id='response_ratio'>
+							<option class="option-style" value="95">95%</option>
+							<option class="option-style" value="99"  selected="selected">99%</option>
+							<option class="option-style" value="100">100%</option>
+							
+						</select>
+						<span class="error_msg">response_ratio, 一般选择99%</span>
+					</div>
+					<div class="box">
+						<label class='task_name'>CPU峰值采样数<i style="color: red;">*</i></i>
+						</label>
+						<input class="shuru" id='cpu_point' type="text" value='3' />
+						<span class="error_msg">cpu_point</span>
+					</div>
+					<div class="box">
+						<label class='task_name' >CPU峰值利用率<i style="color: red;">*</i></i>
+						</label>
+						<input id="cpu_point_ratio" class="shuru" type="text" value='80'  />
+						<span class="error_msg">cpu_point_ratio</span>
+					</div>
+					<div class="box">
+						<label class='task_name'>CPU平均利用率<i style="color: red;">*</i></i>
+						</label>
+						<input id='cpu_avg_ratio' class="shuru"  type="text" value='60' />
+						<span class="error_msg">cpu_avg_ratio</span>
+					</div>
+					<div class="box">
+						<label class='task_name'>内存峰值采样数<i style="color: red;">*</i></i>
+						</label>
+						<input class="shuru" type="text" value='3' id='mem_point' />
+						<span class="error_msg">mem_point</span>
+					</div>
+					<div class="box">
+						<label class='task_name'>内存峰值利用率<i style="color: red;">*</i></i>
+						</label>
+						<input class="shuru" type="text" value='80' id='mem_point_ratio' />
+						<span class="error_msg">mem_point_ratio</span>
+					</div>
+					<div class="box">
+						<label class='task_name'>内存平均利用率<i style="color: red;">*</i></i>
+						</label>
+						<input class="shuru" type="text" value='60' id='mem_avg_ratio' />
+						<span class="error_msg">mem_avg_ratio</span>
+					</div>
+				</div>
+				<!--业务机信息-->
+				<div class="content-header gray">
+					<span class="content-title">系统性能基本要求</span>
+					<div class="css-click js-click">
+					</div>
+				</div>
+
+				<div class="add_box">
+					<div class="content-content content_index" style="border: 1px solid #ccc;">
+						<!--点击添加-->
+						<div class="css-add js-add">
+							新建
+						</div>
+						<div class="box">
+							<label class='task_name'>业务名称<i style="color: red;">*</i></i>
+							</label>
+							<input class="shuru yewu_name" type="text" placeholder="请输入3-20位字母、数字或文字 " />
+							<span class="error_msg"></span>
+						</div>
+						<div class="box">
+							<label class='task_name'>脚本路径
+							</label>
+							<input class="shuru jiaoben_path" type="text" placeholder="请输入路径" />
+							<span class="error_msg"></span>
+						</div>
+						<div class="box">
+							<label class='task_name'>ip地址<i style="color: red;">*</i></i>
+							</label>
+							<input class="shuru ip_address" type="text" placeholder="例192.168.1.138 " />
+							<span class="error_msg"></span>
+						</div>
+						<div class="box">
+							<label class='task_name '>用户名<i style="color: red;">*</i></i>
+							</label>
+							<input class="shuru user_name" type="text" placeholder="请输入3-20位字母、数字或文字 " />
+							<span class="error_msg"></span>
+						</div>
+						<div class="box">
+							<label class='task_name '>密码<i style="color: red;">*</i></i>
+							</label>
+							<input class="shuru user_password" type="password" placeholder="请输入密码 " />
+							<span class="error_msg"></span>
+						</div>
+
+					</div>
+				</div>
+				<!--确定跟取消-->
+				<div class="result">
+					<div class="quit">取消</div>
+					<div class="confirm js-submit">确认</div>
+				</div>
+			</div>
+		</div>
+		<%= require('html-loader!./layout/footer.html')%>
+	</body>
+
+</html>

@@ -1,0 +1,15 @@
+.footer{
+	margin-top: 100px;
+	background: #000000;
+}
+.footer-item{
+	background: #000000;
+	padding: 40px 0 10px 0;
+	text-align: center;
+}
+.footer .copyright{
+	background: #000000;
+	text-align: center;
+	padding-bottom:25px;
+	color: #999;
+	}

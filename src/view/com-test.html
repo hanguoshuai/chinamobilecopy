@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<%= require('html-loader!./layout/header-common.html')%>
+		<title>
+			<%= htmlWebpackPlugin.options.title %>
+		</title>
+	</head>
+
+	<body>
+		<%= require('html-loader!./layout/nav.html')%>
+		<%= require('html-loader!./layout/nav-list.html')%>
+		<div class="w">
+			<div class="title">复杂业务应用测试--任务列表</div>
+			<!--基本信息-->
+			<div class="com-header">
+				<div class="time fl">测试时间</div>
+				<div class="name fl">任务名称</div>
+				<div class="yun_name fl">云平台名称</div>
+				<div class="num fl">测试机总数</div>
+				<div class="status fl">测试状态</div>
+			</div>
+			<div class="com-content">
+				<!--<li class="ov com-list com-hover">
+					<div class="time fl">测试时间</div>
+					<div class="name fl">任务名称</div>
+					<div class="yun_name fl">云平台名称</div>
+					<div class="num fl">测试机总数</div>
+					<div class="status fl">测试状态</div>
+				</li>
+				<li class="ov com-list">
+					<div class="time fl">测试时间</div>
+					<div class="name fl">任务名称</div>
+					<div class="yun_name fl">云平台名称</div>
+					<div class="num fl">测试机总数</div>
+					<div class="status fl">测试状态</div>
+				</li>
+				<li class="ov com-list">
+					<div class="time fl">测试时间</div>
+					<div class="name fl">任务名称</div>
+					<div class="yun_name fl">云平台名称</div>
+					<div class="num fl">测试机总数</div>
+					<div class="status fl">测试状态</div>
+				</li>-->
+			</div>
+			<div class="all-list ov">
+				<div class="all-item fl">
+					共有<span class="all-num">2</span>条
+				</div>
+				<div class="num-change fl ov">
+					<input class="fl input-num" type="text" name=""  value="1" />
+					<span class="fl " style="margin-left: 20px;">of</span>
+					<span class="fl all-page" >2</span>
+					<div class="fl css-click-go" >GO</div>
+				</div>
+				
+				<div class="next-page fr ">下一页</div>
+				<div class="last-page fr gray">上一页</div>
+				
+			</div>
+		</div>
+		<%= require('html-loader!./layout/footer.html')%>
+	</body>
+
+</html>

@@ -1,0 +1,29 @@
+ {{#list}}
+<div class="click-change ">
+	
+	
+	<div class="resource gray-qian">
+		所有业务分轮次资源优化足迹
+	</div>
+	<div class="echarts" id={{name}} style="height: 500px;width:500px;">
+
+	</div>
+	<div class="resource gray-qian">
+		业务系统性能与虚拟机规格关系图
+	</div>
+	<div class="echarts" id="main1" style="height: 500px;width:500px;">
+
+	</div>
+	<div class="task-info">
+				<p class="t-header">结果说明{{name}}</p>
+				<div class="task-content">
+					对业务系统进行了N轮压力测试，第N轮可满足CPU和内存的峰值采样、峰值利用率、平均利用率等上限要求，为增加系统弹性能力，我们推荐使用第N-1轮推荐配置
+				</div>
+			</div>
+	<div class="task-title1">{{name}}</div>
+	
+	
+
+</div>
+
+{{/list}}

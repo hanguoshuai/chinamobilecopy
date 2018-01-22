@@ -1,0 +1,18 @@
+{{#result_arr}}
+	<li class="ov com-list com-hover">
+		<div class="time fl">{{start_time}}</div>
+		<div class="name fl">{{name}}</div>
+		<div class="yun_name fl">{{provider}}</div>
+		<div class="num fl">{{vm_num}}</div>
+		<div class="status fl  status_{{status}}">
+			{{status_desc}}
+		</div>
+	</li>
+{{/result_arr}}
+{{^result_arr}}
+	<div class="no-data">
+		列表空空如也
+	</div>	
+{{/result_arr}}
+
+

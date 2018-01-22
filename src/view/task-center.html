@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<%= require('html-loader!./layout/header-common.html')%>
+		<title>
+			<%= htmlWebpackPlugin.options.title %>
+		</title>
+	</head>
+
+	<body>
+		<%= require('html-loader!./layout/nav.html')%>
+		<%= require('html-loader!./layout/nav-list.html')%>
+		<div class="w">
+			<!--任务中心-->
+			<div class="task">
+				<img src="<%= require('../image/logo-2.png') %>" alt="" class="logo-2" />
+				<div class="task-title fl">任务中心</div>
+				<div class="task-btn fr">返回</div>
+			</div>
+			<div class="title">压力测试详情</div>
+			<div class="title-header gray">
+				<span class="title-content fl">单业务资源优化足迹</span>
+				<img class="title-img" src="<%= require('../image/title-question.png')%>" alt="" />
+			</div>
+			<!--点击切换业务||机器-->
+			<div class="click-content">
+				<div class="last-one lv">上一个</div>
+				<div class="next-one lv">下一个</div>
+			</div>
+			<div class="box">
+			</div>
+			
+			<div class="click-content">
+			</div>
+		</div>
+		<%= require('html-loader!./layout/footer.html')%>
+	</body>
+
+</html>

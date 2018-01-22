@@ -1,0 +1,402 @@
+
+.box{
+	margin: 10px 0;
+	position: relative;
+	overflow: hidden;
+	min-height: 1288px;
+	/*border: 1px solid #ddd;*/
+}
+.business{
+	position: relative;
+	overflow: hidden;
+	height: 1300px;
+}
+.business-item{
+	width: 1080px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.click-change{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	width: 100%;
+	/*height: 30px;*/
+}
+.a{
+	opacity: 1;
+}
+.last-one{
+	position: absolute;
+	top: 800px;
+	left: 0px;
+	height: 30px;
+	line-height: 30px;
+	width: 100px;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	z-index: 1000;
+}
+.last-one:hover{
+	background: #2add9c;
+}
+.next-one:hover{
+	background: #2add9c;
+}
+.disabled1{
+	background-color: #e9e7ef;
+}
+.next-one{
+	position: absolute;
+	top: 800px;
+	right: 0px;
+	height: 30px;
+	line-height: 30px;
+	width: 100px;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	z-index: 1000;
+}
+.task-title1{
+	margin:0 108px;
+	background: #F2F2F2;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+}
+.virt{
+	height: 30px;
+	line-height: 30px;
+	margin: 10px 0;
+}
+.resource{
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.table-header{
+	background: #D8D8D8;
+	width:1078px;
+	height: 40px;
+	line-height: 40px;
+	overflow: hidden;
+	border: 1px solid #BFBFBF;
+	/*border-bottom: 0px;*/
+}
+.t-name{
+	text-align: center;
+	float: left;
+	width: 502px;
+	/*background: red;*/
+}
+.t-cpu{
+	text-align: center;
+	float: left;
+	width: 250px;
+	/*background: green;*/
+}
+.t-memory{
+	text-align: center;
+	float: left;
+	width: 250px;
+}
+.table-content{
+	overflow: hidden;
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	border: 1px solid #bfbfbf;
+	border-top: 0px;
+	border-right: 0px;
+	
+}
+.table-1{
+	
+	float: left;
+	width: 75px;
+	height: 40px;
+	/*background: #D8D8D8;*/
+
+}
+.t-1{
+	text-align: center;
+	float: left;
+	width: 75px;
+	height: 40px;
+	background: #D8D8D8;
+	border-right: 1px solid #bfbfbf;
+}
+.t-2{
+	text-align: center;
+	float: left;
+	width: 500px;
+	border-right: 1px solid #bfbfbf;
+	
+}
+.t-3{
+	text-align: center;
+	
+	float: left;
+	width: 250px;
+	border-right: 1px solid #bfbfbf;
+	
+}
+
+.task-info{
+	background: #fff3cd;
+	height: 80px;
+	border: 1px solid #ffd966;
+	padding: 15px;
+	margin-bottom: 40px;
+}
+.t-header{
+	font-weight: 800;
+	margin-bottom: 10px;
+}
+/*help-center拷贝*/
+.virt{
+	height: 30px;
+	line-height: 30px;
+	margin: 10px 0;
+}
+.v-header{
+	height: 35px;
+	overflow: hidden;
+	border: 1px solid #bfbfbf;
+	background: #D8D8D8;
+	display: flex;
+}
+.v-header span{
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	border-right:1px solid #D8D8D8 ;
+	
+}
+.v-time{
+	width: 223px;
+	border-right: 1px solid #fefefe;
+	background: #D8D8D8;
+}
+.v-1{
+	flex: 1;
+	/*background: red;*/
+}
+.h-content .v-time{
+	width: 224px;
+	border-right: 1px solid #fefefe;
+}
+.h-content{
+	display: flex;
+	text-align: center;
+	overflow: hidden;
+	height: 30px;
+	border: 1px solid #BFBFBF;
+	border-width: 0px 0px 1px 1px ;
+	line-height: 30px;
+}
+.h-content span{
+	border-right:1px solid #ddd ;
+}
+.z-header{
+	margin-top: 15px;
+	overflow: hidden;
+	height: 35px;
+	background: #42645f;
+	line-height: 35px;
+	color: #fff;
+	
+}
+.z-header-number{
+	width: 40px;
+	height: 35px;
+	line-height: 35px;
+	background: #000;
+	text-align: center;
+}
+.z-header-content{
+	height: 35px;
+	line-height: 35px;
+	text-align: left;
+	padding-left: 20px;
+}
+.res{
+	/*border: 1px solid #CCCCCC;*/
+}
+.res-header{
+	display: flex;
+	background: #d8d8d8;
+	height: 35px;
+	overflow: hidden;
+	border: 1px solid #bfbfbf;
+}
+.res-time{
+	width: 223px;
+	border-right: 1px solid #ddd;
+}
+.res-1{
+	flex: 1;
+	background: #d8d8d8;
+}
+.res-header span{
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	border-right:1px solid #D8D8D8;
+}
+.res-content{
+	height: 60px;
+	overflow: hidden;
+	border-bottom: 1px solid #bfbfbf;
+}
+.res-c-header{
+	background: #d8d8d8;
+	height: 60px;
+	width: 134px;
+	line-height: 60px;
+	text-align: center;
+	border-right: 1px solid #bfbfbf;
+}
+.res-c-title{
+	width: 90px;
+	height: 60px;
+	background: #F2F2F2;
+	border-right: 1px solid #bfbfbf;
+}
+.cpu-avg{
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border-bottom: 1px solid #bfbfbf;
+}
+.cpu-max{
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	/*border-bottom: 1px solid #bfbfbf;*/
+	
+}
+.res-c-content{
+	width: 854px;
+	background: #fff;
+	height: 60px;
+}
+.cpu-avg-content{
+	display: flex;
+	overflow: hidden;
+}
+.cpu-avg-content span{
+	flex: 1;
+	height:30px ;
+	/*background: #fff;*/
+	text-align: center;
+	line-height: 30px;
+	border-right: 1px solid #bfbfbf;
+	border-bottom: 1px solid #bfbfbf;
+}
+/*图表最外层*/
+.lunci{
+	border: 1px solid #fff;
+	border-radius: 15px;
+}
+/*循环产生多少轮*/
+.lun{
+	padding-left: 20px;
+	display: flex;
+	justify-content: space-around;
+	height: 30px;
+	width: 850px;
+	/*background: #ccc;*/
+	/*position: absolute;
+	top: 0px;
+	left: 0px;*/
+}
+.lun_item{
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 20px;
+	background: #afdd22;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 3px;
+	color: #fff;
+	line-height: 20px;
+	text-align: center;
+	cursor: pointer;
+}
+.lun_item:hover{
+	background: #0eb83a;
+}
+/*遮罩层*/
+.float-page{
+	background: #75878a;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0.9;
+	z-index: 10000;
+	display: none;
+}
+.model{
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	height: 300px;
+	width: 1000px;
+	background: #fff;
+	opacity: 1;
+	z-index: 10001;
+	display: none;
+}
+.js-close{
+	position: absolute;
+	top: 10px;
+	border: 1px solid #057748;
+	right: 10px;
+	background: #9ed048;
+	z-index: 10000;
+	cursor: pointer;
+	height: 30px;
+	width: 60px;
+	border-radius: 15px;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+}
+.js-close:hover{
+	background: #0eb83a;
+}
+/*//ecahrts图表中对提示框的修改*/
+.title-echarts{
+	display: inline-block;
+	width: 200px;
+	height: 20px;
+}
+.title-echarts1{
+	display: inline-block;
+	width: 100px;
+	height: 20px;
+}
+.line{
+	display: inline-block;
+	width: 30px;
+	margin: 0 10px;
+	height: 5px;
+	line-height: 20px;
+}
+/*//结果说明的样式*/
+.lun-style{
+	color: #f35336;
+	padding: 0 5px;
+}

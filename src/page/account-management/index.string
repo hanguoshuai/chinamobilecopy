@@ -1,0 +1,106 @@
+ {{#list}}
+<div class="click-change ">
+	
+	
+	<div class="resource gray-qian">
+		资源利用率曲线图
+	</div>
+	<div class="echarts" id={{name}} style="height: 500px;width:500px;">
+
+	</div>
+	<div class="task-title1">{{name}}</div>
+	<div class="virt gray-qian">
+		虚拟机规格足迹{{name}}
+	</div>
+	<ul class="table-box">
+		<li class="table-header gray-qian">
+			<span class="table-1">
+				
+			</span>
+			<span class="t-name">
+				名称
+			</span>
+			<span class="t-cpu">
+				cpu
+			</span>
+			<span class="t-memory">
+				内存
+			</span>
+		</li>
+		<li class="table-content">
+			<span class="t-1">
+				A
+			</span>
+			<span class="t-2">
+				四川省业务一
+			</span>
+			<span class="t-3">
+				4
+			</span>
+			<span class="t-3">
+				4
+			</span>
+		</li>
+		<li class="table-content">
+			<span class="t-1">
+				A
+			</span>
+			<span class="t-2">
+				四川省业务一
+			</span>
+			<span class="t-3">
+				4
+			</span>
+			<span class="t-3">
+				4
+			</span>
+		</li>
+		<li class="table-content">
+			<span class="t-1">
+				A
+			</span>
+			<span class="t-2">
+				四川省业务一
+			</span>
+			<span class="t-3">
+				4
+			</span>
+			<span class="t-3">
+				4
+			</span>
+		</li>
+		<li class="table-content">
+			<span class="t-1">
+				A
+			</span>
+			<span class="t-2">
+				四川省业务一
+			</span>
+			<span class="t-3">
+				4
+			</span>
+			<span class="t-3">
+				4
+			</span>
+		</li>
+		<li class="table-content">
+			<span class="t-1">
+				A
+			</span>
+			<span class="t-2">
+				四川省业务一
+			</span>
+			<span class="t-3">
+				4
+			</span>
+			<span class="t-3">
+				4
+			</span>
+		</li>
+		
+	</ul>
+	
+
+</div>
+
+{{/list}}

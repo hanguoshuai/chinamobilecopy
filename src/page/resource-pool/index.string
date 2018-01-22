@@ -1,0 +1,8 @@
+{{#result}}
+<div class="title">测试详情</div>
+			<div class="header-title">
+				<span class="h-item">测试完成</span>
+				<span class="h-time-content">{{start_time}}-{{end_time}}</span>
+				<span class="h-time-title">测试时间</span>
+			</div>
+{{/result}}

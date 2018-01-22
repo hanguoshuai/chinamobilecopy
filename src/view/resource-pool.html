@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<%= require('html-loader!./layout/header-common.html')%>
+		<title><%= htmlWebpackPlugin.options.title %></title>
+	</head>
+
+	<body>
+		<%= require('html-loader!./layout/nav.html')%>
+		<%= require('html-loader!./layout/nav-list.html')%>
+		<div class="w">
+		
+			
+			<!--任务中心-->
+			<div class="task">
+				<img src="<%= require('../image/logo-2.png') %>" alt="" class="logo-2"/>
+				<div class="task-title fl">任务中心</div>
+				<div class="task-btn fr">返回</div>
+			</div>
+			<div class="box">
+				
+			</div>
+			
+			
+			<!--基本信息-->
+			<div class="message-box"></div>
+			<!--业务机器列表-->
+			<div class="task-item"></div>
+			
+			<div class="content">
+				<div class="content-header">
+					<span class="content-title">服务器/业务列表</span>
+					<div class="css-click js-click">
+					</div>
+					<span class="content-time">共5台</span>
+				</div>
+				<div class="content-content">
+					<ul class="table-item">
+						<li class="service-header">
+							<span class="service-num"></span>
+							<span class="service-name">名称</span>
+							<span class="service-id">ip地址</span>
+							<span class="service-status">状态</span>
+						</li>
+						<li class="table-content">
+							<div class="service_table_1">
+								<i>压</i>
+							</div>
+							<div class="p-service-name">
+								<p class="p-name">四川省业务-24G测试-1 </p>
+								<p class="p-ID">ID_82134567</p>
+							</div>
+							<div class="p-service-id">
+								192.168.101.112:8080
+							</div>
+							<div class="p-service-status">
+								<span class="p-success p-content">成功</span>
+							</div>
+						</li>
+						<li class="table-content">
+							<div class="service_table_1">
+								<i>压</i>
+							</div>
+							<div class="p-service-name">
+								<p class="p-name">四川省业务-24G测试-1 </p>
+								<p class="p-ID">ID_82134567</p>
+							</div>
+							<div class="p-service-id">
+								192.168.101.112:8080
+							</div>
+							<div class="p-service-status">
+								<span class="p-waiting p-content">运行</span>
+							</div>
+						</li>
+						<li class="table-content">
+							<div class="service_table_1">
+								<i>压</i>
+							</div>
+							<div class="p-service-name">
+								<p class="p-name">四川省业务-24G测试-1 </p>
+								<p class="p-ID">ID_82134567</p>
+							</div>
+							<div class="p-service-id">
+								192.168.101.112:8080
+							</div>
+							<div class="p-service-status">
+								<span class="p-error p-content">失败</span>
+							</div>
+						</li>
+						<li class="table-content">
+							<div class="service_table_1">
+								<i>压</i>
+							</div>
+							<div class="p-service-name">
+								<p class="p-name">四川省业务-24G测试-1 </p>
+								<p class="p-ID">ID_82134567</p>
+							</div>
+							<div class="p-service-id">
+								192.168.101.112:8080
+							</div>
+							<div class="p-service-status">
+								<span class="p-waiting p-content">运行</span>
+							</div>
+						</li>
+						<li class="table-content">
+							<div class="service_table_1">
+								<i>压</i>
+							</div>
+							<div class="p-service-name">
+								<p class="p-name">四川省业务-24G测试-1 </p>
+								<p class="p-ID">ID_82134567</p>
+							</div>
+							<div class="p-service-id">
+								192.168.101.112:8080
+							</div>
+							<div class="p-service-status">
+								<span class="p-success p-content">成功</span>
+							</div>
+						</li>
+						<li class="table-content">
+							<div class="service_table_1">
+								<i>压</i>
+							</div>
+							<div class="p-service-name">
+								<p class="p-name">四川省业务-24G测试-1 </p>
+								<p class="p-ID">ID_82134567</p>
+							</div>
+							<div class="p-service-id">
+								192.168.101.112:8080
+							</div>
+							<div class="p-service-status">
+								<span class="p-error p-content">失败</span>
+							</div>
+						</li>
+						
+						
+					</ul>
+				</div>
+
+			</div>
+			<div class="content">
+				<div class="content-header">
+					<span class="content-title">资源优化结果</span>
+					<div class="css-click js-click">
+					</div>
+					<span class="content-time">CPU 32% 内存 64%</span>
+				</div>
+				<div class="content-content">
+					<ul>
+						<div class="resource-header">
+							<div class="resource-num gray">
+								序号
+							</div>
+							<div class="resource-business-name gray">业务名称</div>
+							<div class="resource-ip gray">ip地址</div>
+							<div class="resource-using ">
+								<p  class="gray">在用</p>
+								<span class="resource-cpu">CPU</span>
+								<span class="resource-memory">内存</span>
+							</div>
+							<div class="resource-recommend ">
+								<p class="gray">推荐</p>
+								<span class="resource-cpu">CPU</span>
+								<span class="resource-memory">内存</span>
+							</div>
+							<div class="resource-save ">
+								<p class="gray">节省</p>
+								<span class="resource-cpu">CPU</span>
+								<span class="resource-memory">内存</span>
+							</div>
+						</div>
+						<li class="r-item">
+							<span class="r-num">
+								A
+							</span>
+							<span class="r-name">
+								省内典型多级业务一
+							</span>
+							<span class="r-ip">
+								192.168.101.112
+							</span>
+							<span class="r-using">
+								<i class="r-cpu">4核</i>
+								<i class="r-memory">32G</i>
+							</span>
+							<span class="r-recommend">
+								<i class="r-cpu">4核</i>
+								<i class="r-memory">32G</i>
+							</span>
+							<span class="r-save">
+								<i class="r-cpu">4核</i>
+								<i class="r-memory">32G</i>
+							</span>
+						</li>
+						<li class="r-item">
+							<span class="r-num">
+								B
+							</span>
+							<span class="r-name">
+								省内典型多级业务一
+							</span>
+							<span class="r-ip">
+								192.168.101.112
+							</span>
+							<span class="r-using">
+								<i class="r-cpu">4核</i>
+								<i class="r-memory">32G</i>
+							</span>
+							<span class="r-recommend">
+								<i class="r-cpu">4核</i>
+								<i class="r-memory">32G</i>
+							</span>
+							<span class="r-save">
+								<i class="r-cpu">4核</i>
+								<i class="r-memory">32G</i>
+							</span>
+						</li>
+						<li class="r-item">
+							<span class="r-num">
+								C
+							</span>
+							<span class="r-name">
+								省内典型多级业务一
+							</span>
+							<span class="r-ip">
+								192.168.101.112
+							</span>
+							<span class="r-using">
+								<i class="r-cpu">4核</i>
+								<i class="r-memory">32G</i>
+							</span>
+							<span class="r-recommend">
+								<i class="r-cpu">4核</i>
+								<i class="r-memory">32G</i>
+							</span>
+							<span class="r-save">
+								<i class="r-cpu">4核</i>
+								<i class="r-memory">32G</i>
+							</span>
+						</li>
+						<li class="r-item">
+							<span class="r-num">
+								D
+							</span>
+							<span class="r-name">
+								省内典型多级业务一
+							</span>
+							<span class="r-ip">
+								192.168.101.112
+							</span>
+							<span class="r-using">
+								<i class="r-cpu">4核</i>
+								<i class="r-memory">32G</i>
+							</span>
+							<span class="r-recommend">
+								<i class="r-cpu">4核</i>
+								<i class="r-memory">32G</i>
+							</span>
+							<span class="r-save">
+								<i class="r-cpu">4核</i>
+								<i class="r-memory">32G</i>
+							</span>
+						</li>
+						<li class="r-item">
+							<span class="r-num">
+								E
+							</span>
+							<span class="r-name">
+								省内典型多级业务一
+							</span>
+							<span class="r-ip">
+								192.168.101.112
+							</span>
+							<span class="r-using">
+								<i class="r-cpu">4核</i>
+								<i class="r-memory">32G</i>
+							</span>
+							<span class="r-recommend">
+								<i class="r-cpu">4核</i>
+								<i class="r-memory">32G</i>
+							</span>
+							<span class="r-save">
+								<i class="r-cpu">4核</i>
+								<i class="r-memory">32G</i>
+							</span>
+						</li>
+						<!--<div class="content-header">
+							<span class="content-title">资源优化结果</span>
+							<div class="css-click js-click">
+							</div>
+							<span class="content-time">CPU 32% 内存 64%</span>
+						</div>-->
+
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+		<%= require('html-loader!./layout/footer.html')%>
+	</body>
+
+</html>

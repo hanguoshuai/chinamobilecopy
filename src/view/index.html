@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<%= require('html-loader!./layout/header-common.html')%>
+		<title>
+			<%= htmlWebpackPlugin.options.title %>
+		</title>
+	</head>
+
+	<body>
+		<%= require('html-loader!./layout/nav.html')%>
+		<%= require('html-loader!./layout/nav-list.html')%>
+		<div class="w">
+			<!--任务中心-->
+			<div class="task">
+				<img src="<%= require('../image/logo-2.png') %>" alt="" class="logo-2" />
+				<div class="task-title fl">任务中心</div>
+				<div class="task-btn fr">返回</div>
+			</div>
+			<div class="title">压力测试详情</div>
+			<div class="title-header gray">
+				<span class="title-content fl">单业务资源优化足迹</span>
+				<img class="title-img" src="<%= require('../image/title-question.png')%>" alt="" />
+			</div>
+			<!--<div class="click-change ">-->
+			<div class="resource gray-qian">
+				所有业务分轮次资源优化足迹
+			</div>
+			<div class="echarts" id='main' style="height: 300px;width:1000px;">
+			</div>
+			<!--<div class="echarts" id='main11' style="height: 300px;width:1000px;">
+			</div>-->
+			<div class="lun" >
+				<!--<li class="lun_item" index='1'>第1轮</li>
+				<li class="lun_item" index='2'>第2轮</li>
+				<li class="lun_item" index='3'>第3轮</li>
+				<li class="lun_item" index='4'>第4轮</li>
+				<li class="lun_item" index='5'>第5轮</li>
+				<li class="lun_item" index='1'>第1轮</li>
+				<li class="lun_item" index='2'>第2轮</li>
+				<li class="lun_item" index='3'>第3轮</li>
+				<li class="lun_item" index='4'>第4轮</li>
+				<li class="lun_item" index='5'>第5轮</li>-->
+			</div>
+			<div class="float-page">
+			</div>
+			<div class="model">
+				<div class="js-close">关闭</div>
+				<div class="echarts-content">
+					<div class="lunci" id="main1" style="width: 900px;height: 300px;"></div>
+				</div>
+			</div>
+			<div class="business">
+				<!--点击切换业务||机器-->
+				<div class="last-one lv select">上一个</div>
+				<div class="next-one lv select">下一个</div>
+				<!--<div class="business-item">
+					<div class="resource gray-qian">
+						业务系统性能与虚拟机规格关系图111
+					</div>
+					<div class="echarts1" id="business" style="height: 500px;width:900px;">
+
+					</div>
+					<div class="task-info">
+						<p class="t-header">结果说明</p>
+						<div class="task-content">
+							对业务系统进行了N轮压力测试，第N轮可满足CPU和内存的峰值采样、峰值利用率、平均利用率等上限要求，为增加系统弹性能力，我们推荐使用第N-1轮推荐配置
+						</div>
+					</div>
+
+					<div class="task-title1">{{name}}111</div>
+
+					<div class="z-header">
+						<div class="z-header-number fl">
+							A
+						</div>
+						<div class="fl z-header-content">
+							四川省业务一
+						</div>
+					</div>
+					<div class="z-box">
+						<div class="virt ">
+							虚拟机规格足迹
+						</div>
+						<ul class="virt-box ">
+							<div class="v-header ">
+								<span class="v-time fl">轮次{{name}}</span>
+								<span class="v-1 fl">原始</span>
+								<span class="v-1 fl">第一轮</span>
+								<span class="v-1 fl">第二轮</span>
+								<span class="v-1 fl">第三轮</span>
+								<span class="v-1 fl">第四轮</span>
+								<span class="v-1 fl">第五轮</span>
+								<span class="v-1 fl">第六轮</span>
+							</div>
+							<li class="h-content">
+								<span class="v-time fl ">CPU</span>
+								<span class="v-1 fl gray-qian">32</span>
+								<span class="v-1 fl">32</span>
+								<span class="v-1 fl">16</span>
+								<span class="v-1 fl">10</span>
+								<span class="v-1 fl">8</span>
+								<span class="v-1 fl lan">6</span>
+								<span class="v-1 fl">4</span>
+							</li>
+							<li class="h-content">
+								<span class="v-time fl ">内存</span>
+								<span class="v-1 fl gray-qian">32</span>
+								<span class="v-1 fl">32</span>
+								<span class="v-1 fl">16</span>
+								<span class="v-1 fl">10</span>
+								<span class="v-1 fl">8</span>
+								<span class="v-1 fl lan">6</span>
+								<span class="v-1 fl">4</span>
+							</li>
+						</ul>
+						<div class="virt ">
+							资源利用率
+						</div>
+						<ul class="res">
+							<div class="res-header ">
+								<span class="res-time fl">轮次{{name}}</span>
+								<span class="res-1 fl">第一轮</span>
+								<span class="res-1 fl">第二轮</span>
+								<span class="res-1 fl">第三轮</span>
+								<span class="res-1 fl">第四轮</span>
+								<span class="res-1 fl">第五轮</span>
+								<span class="res-1 fl">第六轮</span>
+							</div>
+							<div class="res-content gray-qian">
+								<div class="res-c-header fl">
+									CPU
+								</div>
+								<div class="res-c-title fl">
+									<div class="cpu-avg">
+										AVG
+									</div>
+									<div class="cpu-max">
+										MAX
+									</div>
+								</div>
+								<ul class="res-c-content fl">
+									<li class="cpu-avg-content lan">
+										<span class="lan">72%</span>
+										<span>22%</span>
+										<span>33%</span>
+										<span>44%</span>
+										<span>65%</span>
+										<span>22%</span>
+									</li>
+									<li class="cpu-avg-content">
+										<span>72%</span>
+										<span>22%</span>
+										<span>33%</span>
+										<span>44%</span>
+										<span class="gray-qian">65%</span>
+										<span>22%</span>
+									</li>
+								</ul>
+							</div>
+							<div class="res-content gray-qian">
+								<div class="res-c-header fl">
+									内存
+								</div>
+								<div class="res-c-title fl">
+									<div class="cpu-avg">
+										AVG
+									</div>
+									<div class="cpu-max">
+										MAX
+									</div>
+								</div>
+								<ul class="res-c-content fl">
+									<li class="cpu-avg-content lan">
+										<span>72%</span>
+										<span>22%</span>
+										<span>33%</span>
+										<span>44%</span>
+										<span>65%</span>
+										<span>22%</span>
+									</li>
+									<li class="cpu-avg-content">
+										<span>72%</span>
+										<span>22%</span>
+										<span>33%</span>
+										<span>44%</span>
+										<span class="gray-qian">65%</span>
+										<span>22%</span>
+									</li>
+								</ul>
+							</div>
+						</ul>
+					</div>
+				</div>-->
+			</div>
+		</div>
+		<%= require('html-loader!./layout/footer.html')%>
+	</body>
+
+</html>
