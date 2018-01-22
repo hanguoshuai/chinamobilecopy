@@ -1,0 +1,388 @@
+.nav-side{
+	background: #000;
+}
+.nav-box{
+	background: #000000;
+	overflow: hidden;
+}
+.nav-item{
+	color: #fff;
+}
+.nav-item.active>a{
+	color: #FF0000;
+}
+
+.nav-item{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+}
+/*标题*/
+.header-title{
+	height: 40px;
+	background: #fff3cd;
+	border: 1px solid #ffc000;
+	line-height: 40px;
+	overflow: hidden;
+}
+/*箭头*/
+.css-click{
+    width:0;
+    height:0;
+    border-width:0 8px 8px;
+    border-style:solid;
+    border-color:transparent transparent #333;/*透明 透明  灰*/
+   	float: right;
+   	margin-top: 6px;
+   	margin-right: 10px;
+    /*position:relative;*/
+}
+/*箭头旋转*/
+.rotate{
+	transform-origin:center center; //旋转中心要是正中间 才行
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transition: transform 0.5s; //过度时间 可调
+    -moz-transition: -moz-transform 0.5s; 
+    -moz-transition: -moz-transform 0.5s; 
+    -o-transition: -o-transform 0.5s; 
+    -ms-transition: -ms-transform 0.5s; 
+}
+.rotate1{
+	transform-origin:center center;
+    transform: rotate(0deg); //返回原点
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transition: transform 0.5s; 
+    -moz-transition: -moz-transform 0.5s; 
+    -moz-transition: -moz-transform 0.5s; 
+    -o-transition: -o-transform 0.5s; 
+    -ms-transition: -ms-transform 0.5s; 
+}
+/*基本信息*/
+.content{
+	margin-top: 10px;
+	
+	line-height: 20px;
+	background: #fff;
+	overflow: hidden;
+}
+.content-title{
+	margin-left: 20px;
+}
+.content-header{
+	background: #f2f2f2;
+	border: 1px solid #F2F2F2;
+	margin-bottom: 18px;
+}
+.content-time{
+	float: right;
+	color: deepskyblue;
+	margin-right: 20px;
+}
+.click{
+	cursor: pointer;
+	float: right;
+	margin-right: 20px;
+}
+.content-content{
+	background: #fff;
+}
+.key{
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	padding-right: 20px;
+}
+.table-header{
+	background: #F6F6F6;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+	/*border: 1px solid #ccc;*/
+}
+.table-box{
+	margin-top: 40px;
+	border: 1px solid #ccc;
+	border-top: 0px;
+}
+.table-box>li{
+	height: 30px;
+	line-height: 30px;
+	border-top: 1px solid #ccc;
+}
+.table_1_header{
+	
+	width: 33%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	
+}
+.table_1{
+	display: inline-block;
+	width: 33%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: #F6F6F6;
+	border-right:1px solid #ccc;
+}
+.table_2{
+	
+	width: 33%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	
+}
+.table_3{
+	display: inline-block;
+	width: 33%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	
+}
+/*服务业/业务列表*/
+.service-header{
+	background: #3f3f3f;
+	color: #F6F6F6;
+	height: 40px;
+	line-height: 40px;
+}
+.table-content{
+	height: 50px;
+	line-height: 50px;
+	 border: 1px solid #ccc;
+	 border-top: 0px;
+	 overflow: hidden;
+}
+.service-num{
+	display: inline-block;
+	width: 8%;
+}
+
+.service-name{
+	display: inline-block;
+	width: 30%;
+}
+.service-id{
+	display: inline-block;
+	width: 30%;
+}
+.service-status{
+	display: inline-block;
+	width: 30%;
+}
+.service_table_1{
+	float: left;
+	width: 8%;
+	
+}
+.service_table_1>i{
+	display: inline-block;
+	width: 40px;
+	font-style: normal;
+	background: #f7f7f7;
+	text-align: center;
+}
+.p-service-name{
+	float: left;
+	width: 30%;
+	height: 50px;
+	overflow: hidden;
+}
+.p-name{
+	
+	height: 25px;
+	line-height: 30px;
+	/*width: 100px;*/
+	color: black;
+	/*background: red;*/
+	overflow: hidden;
+}
+.p-ID{
+	
+	height: 25px;
+	line-height: 25px;
+	/*width: 100px;*/
+	color: #0070c0;
+	/*background: greenyellow;*/
+	overflow: hidden;
+}
+.p-service-id{
+	float: left;
+	width: 30%;
+}
+.p-service-status{
+	float: left;
+	width: 30%;
+}
+.p-content{
+	display: inline-block;
+	padding-left: 30px;
+}
+.p-success{
+	background: url(/dist/resource/img-success.png) no-repeat center left;
+}
+.p-error{
+	background: url(/dist/resource/img-false.png) no-repeat center left;
+}
+.p-waiting{
+	background: url(/dist/resource/img-running.png) no-repeat center left;
+}
+.table-content:hover{
+	background: #DDD;
+}
+/*资源优化结果*/
+.resource-header{
+	overflow: hidden;
+	height: 40px;
+	text-align: center;
+	border: 1px solid #ccc;
+	border-right: 0px;
+}
+.resource-header>div{
+	float: left;
+}
+.resource-num{
+	height: 40px;
+	line-height: 40px;
+	width: 108px;
+	border-right: 1px solid #ccc;
+}
+.resource-business-name{
+	width: 189px;
+	height: 40px;
+	line-height: 40px;
+	border-right: 1px solid #ccc;
+	
+}
+.resource-ip{
+	width: 194px;
+	height: 40px;
+	line-height: 40px;
+	border-right: 1px solid #ccc;
+	
+}
+.resource-using{
+	width: 194px;
+	height: 40px;
+	background: #F6F6F6;
+	border-right: 1px solid #ccc;
+	
+}
+.resource-using>p{
+	height: 19px;
+	line-height: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+.resource-cpu{
+	display: inline-block;
+	width: 90px;
+	height: 20px;
+	line-height: 20px;
+	background: #F6F6F6;	
+	
+}
+.resource-memory{
+	display: inline-block;
+	width: 90px;
+	height: 20px;
+	line-height: 20px;
+	background: #F6F6F6;	
+	
+}
+.resource-recommend{
+	width: 194px;
+	height: 40px;
+	line-height: 20px;
+	background: #F6F6F6;
+	border-right: 1px solid #ccc;
+	
+}
+.resource-recommend>p{
+	height: 19px;
+	line-height: 20px;
+	border-bottom: 1px solid #ccc;
+	
+}
+.resource-save{
+	width: 194px;
+	height: 40px;
+	background: #F6F6F6;
+	border-right: 1px solid #ccc;
+	
+}
+.resource-save>p{
+	height: 19px;
+	line-height: 20px;
+	border-bottom: 1px solid #ccc;
+	
+}
+.r-item{
+	overflow: hidden;
+}
+.r-item>span{
+	float: left;
+}
+.r-item{
+	height: 40px;
+	
+	line-height: 40px;
+	border: 1px solid #ccc;
+	border-top: 0px;
+	border-right: 0px;
+}
+.r-num{
+	width: 108px;
+	text-align: center;
+	background: #ebebeb;
+	border-right: 1px solid #ccc;
+	
+}
+.r-name{
+	width: 189px;
+	text-align: center;
+	background: #F6F6F6;
+	border-right: 1px solid #ccc;
+}
+.r-ip{
+	text-align: center;
+	width: 194px;
+	border-right: 1px solid #ccc;
+}
+.r-using{
+	background: #fff;
+	width: 194px;
+	text-align: center;
+	border-right: 1px solid #ccc;
+}
+.r-recommend{
+	background: #fffee3;
+	width: 194px;
+	border-right: 1px solid #ccc;
+	text-align: center;
+}
+.r-save{
+	background: #fff2dd;
+	width: 194px;
+	border-right: 1px solid #ccc;
+	text-align: center;
+}
+.r-cpu{
+	float: left;
+	width: 50%;
+}
+.r-memory{
+	float: left;
+	width: 50%;
+}

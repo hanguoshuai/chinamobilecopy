@@ -1,0 +1,127 @@
+.nav-side{
+	background: #000;
+}
+.nav-box{
+	background: #000000;
+	overflow: hidden;
+}
+.nav-item{
+	color: #fff;
+}
+.nav-item.active>a{
+	color: #FF0000;
+}
+
+.nav-item{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+}
+
+.box{
+	margin: 10px 0;
+	position: relative;
+	overflow: hidden;
+	height: 950px;
+	/*border: 1px solid #ddd;*/
+}
+.click-change{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	width: 100%;
+	/*height: 30px;*/
+}
+.a{
+	opacity: 1;
+}
+.last-one{
+	position: absolute;
+	top: 10px;
+	left: 0px;
+	height: 30px;
+	line-height: 30px;
+	width: 100px;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	z-index: 100;
+}
+.next-one{
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	height: 30px;
+	line-height: 30px;
+	width: 100px;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	z-index: 100;
+}
+.task-title1{
+	margin:0 108px;
+	background: #F2F2F2;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+}
+.virt{
+	height: 30px;
+	line-height: 30px;
+	margin: 10px 0;
+}
+.resource{
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.v-header{
+	height: 32px;
+	overflow: hidden;
+	border: 1px solid #ddd;
+}
+.v-header span{
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.v-time{
+	width: 218px;
+	border-right: 1px solid #ddd;
+}
+.v-1{
+	width: 142px;
+}
+.v-2{
+	width: 144px;
+}
+.h-content{
+	text-align: center;
+	overflow: hidden;
+	height: 30px;
+	border: 1px solid #ddd;
+	border-width: 0px 0px 1px 1px ;
+	line-height: 30px;
+}
+.h-content span{
+	border-right:1px solid #ddd ;
+}
+.click-content{
+	position: relative;
+	background: red;
+	height: 0px;
+}
+.task-info{
+	background: #fff3cd;
+	height: 80px;
+	border: 1px solid #ffd966;
+	padding: 15px;
+}
+.t-header{
+	font-weight: 800;
+	margin-bottom: 10px;
+}

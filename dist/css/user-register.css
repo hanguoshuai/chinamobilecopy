@@ -1,0 +1,20 @@
+.nav-side{
+	background: #000;
+}
+.nav-box{
+	background: #000000;
+	overflow: hidden;
+}
+.nav-item{
+	color: #fff;
+}
+.nav-item.active>a{
+	color: #FF0000;
+}
+
+.nav-item{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+}

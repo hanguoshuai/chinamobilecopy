@@ -1,0 +1,280 @@
+
+/*css reset*/
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+    background: #FFFFFF;
+    font: 13px/1.5 tahoma, arial, Microsoft YaHei, sans-serif;
+}
+li{
+    list-style: none;
+}
+img{
+    display: block;
+    border: none;
+}
+label{
+    cursor: pointer;
+}
+input[type='checkbox']{
+    cursor: pointer;
+}
+/*定宽布局*/
+.w{
+	width: 1080px;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+	background: #fff;
+}
+/*全局通用样式*/
+/*隐藏类*/
+.hide{
+	display: none;
+}
+/*超链样式*/
+.link{
+	color: #999;
+	cursor: pointer;
+	text-decoration: none;
+}
+.link:hover{
+    color: #e80012;
+}
+.link-text{
+	color: #999;
+	text-decoration: none;
+}
+/* btn */
+.btn{
+    display: inline-block;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    border: none;
+    background: #c60023;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-mini{
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    padding: 0 10px;
+}
+i{
+	font-style: normal;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+/* loading */
+.loading{
+    margin: 10px auto;
+    display: block;
+    width: 65px;
+    height: 65px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: url(/dist/resource/loading.gif) no-repeat;
+    opacity: .6;
+}
+/*本项目常用css*/
+/*测试名称*/
+.title{
+	border-left: 6px solid #00b0f0;
+	padding-left: 10px;
+	height: 26px;
+	line-height: 26px;
+	margin: 6px 0px;
+}
+/*颜色*/
+.sky{
+	color: deepskyblue;
+}
+.gray{
+	background: #DDDDDD;
+}
+.gray-qian{
+	background: #F2F2F2;
+}
+.lan{
+	background: #ddf5ff;
+}
+.lv{
+	background: #42645f;
+}
+.qian-lu{
+	background: #e6f3d6;
+}
+.hui{
+	color: #CCCCCC;
+}
+/*任务中心*/
+.task{
+	margin: 18px 0px 12px 0px;
+	overflow: hidden;
+	background: #fff;
+	height: 30px;
+	line-height: 26px;
+	font-weight: 800;
+}
+.logo-2{
+
+	float: left;
+	width: 26px;
+	height: 26px;
+	padding-right: 10px;
+}
+.task-btn{
+	height: 28px;
+	width: 77px;
+	text-align: center;
+	line-height: 28px;
+	background: #ddd;
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+
+.h-item{
+	margin-left: 20px;
+}
+.h-time-title{
+	float: right;
+	color: deepskyblue;
+	margin-right: 20px;
+}
+.h-time-content{
+	float: right;
+	margin-right: 20px;
+}
+/*头部*/
+.title-header{
+	overflow: hidden;
+	height: 25px;
+	width: 100%;
+	line-height: 25px;
+	position: relative;
+}
+.title-content{
+	padding-left: 20px;
+	height: 25px;
+	line-height: 25px;
+}
+.title-img{
+	width: 19px;
+	height: 19px;
+	display: inline-block;
+	position: absolute;
+	top: 3px;
+	right: 5px;
+	
+}
+/*箭头*/
+/*.css-click{
+    width:0;
+    height:0;
+    border-width:0 8px 8px;
+    border-style:solid;
+    border-color:transparent transparent #333;
+   	float: right;
+   	margin-top: 6px;
+   	margin-right: 10px;
+}*/
+/*箭头旋转*/
+.rotate{
+	transform-origin:center center; //旋转中心要是正中间 才行
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transition: transform 0.5s; //过度时间 可调
+    -moz-transition: -moz-transform 0.5s; 
+    -moz-transition: -moz-transform 0.5s; 
+    -o-transition: -o-transform 0.5s; 
+    -ms-transition: -ms-transform 0.5s; 
+}
+.rotate1{
+	transform-origin:center center;
+    transform: rotate(0deg); //返回原点
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transition: transform 0.5s; 
+    -moz-transition: -moz-transform 0.5s; 
+    -moz-transition: -moz-transform 0.5s; 
+    -o-transition: -o-transform 0.5s; 
+    -ms-transition: -ms-transform 0.5s; 
+}.nav{
+    background: #fff;
+    margin: 10px 0;
+}
+
+.logo-content{
+	float: left;
+}
+.user-info{
+	margin-top: 18px;
+	float: right;
+}
+.user-info .user{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.user-info .user.login{
+	display: none;
+}
+
+.logo-img{
+	float: left;
+	width: 40px;
+	height: 35px;
+	padding-right: 6px;
+}
+.nav-side{
+	background: #000;
+}
+.nav-box{
+	background: #000000;
+	overflow: hidden;
+}
+.nav-item{
+	color: #fff;
+}
+.nav-item.active>a{
+	color: #FF0000;
+}
+
+.nav-item{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+}
+.footer{
+	margin-top: 100px;
+	background: #000000;
+}
+.footer-item{
+	background: #000000;
+	padding: 40px 0 10px 0;
+	text-align: center;
+}
+.footer .copyright{
+	background: #000000;
+	text-align: center;
+	padding-bottom:25px;
+	color: #999;
+	}
